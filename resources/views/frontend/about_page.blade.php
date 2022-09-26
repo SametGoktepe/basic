@@ -27,12 +27,12 @@ About | Personal Portfolio
         </div>
         <div class="breadcrumb__wrap__icon">
             <ul>
-                <li><img src="assets/img/icons/breadcrumb_icon01.png" alt=""></li>
-                <li><img src="assets/img/icons/breadcrumb_icon02.png" alt=""></li>
-                <li><img src="assets/img/icons/breadcrumb_icon03.png" alt=""></li>
-                <li><img src="assets/img/icons/breadcrumb_icon04.png" alt=""></li>
-                <li><img src="assets/img/icons/breadcrumb_icon05.png" alt=""></li>
-                <li><img src="assets/img/icons/breadcrumb_icon06.png" alt=""></li>
+                <li><img src="{{ asset('frontend/assets/img/icons/breadcrumb_icon01.png') }}" alt=""></li>
+                <li><img src="{{ asset('frontend/assets/img/icons/breadcrumb_icon02.png') }}" alt=""></li>
+                <li><img src="{{ asset('frontend/assets/img/icons/breadcrumb_icon03.png') }}" alt=""></li>
+                <li><img src="{{ asset('frontend/assets/img/icons/breadcrumb_icon04.png') }}" alt=""></li>
+                <li><img src="{{ asset('frontend/assets/img/icons/breadcrumb_icon05.png') }}" alt=""></li>
+                <li><img src="{{ asset('frontend/assets/img/icons/breadcrumb_icon06.png') }}" alt=""></li>
             </ul>
         </div>
     </section>
@@ -58,10 +58,10 @@ About | Personal Portfolio
                                 <img src="{{ asset('frontend/assets/img/icons/about_icon.png') }}" alt="">
                             </div>
                             <div class="about__exp__content">
-                                <p><span>{{ $aboutpage->short_description }}</span> </p>
+                                <p><span>{!! $aboutpage->short_description !!}</span> </p>
                             </div>
                         </div>
-                        <p class="desc">{{ $aboutpage->long_description }} </p>
+                        <p class="desc">{!! $aboutpage->long_description !!} </p>
                         <a href="about.html" class="btn">Download my resume</a>
                     </div>
                 </div>

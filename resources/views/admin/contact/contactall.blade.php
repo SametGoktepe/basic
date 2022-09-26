@@ -32,10 +32,10 @@
                             </tr>
                             </thead>
                             <tbody>
-                                @php($i = 1)
-                                @foreach ($contacts as $item)
+                                
+                                @foreach ($contacts as $key => $item)
                             <tr>
-                                <td>{{ $i++ }}</td>
+                                <td>{{ $key+1 }}</td>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->email }}</td>
                                 <td>{{ $item->subject }}</td>
